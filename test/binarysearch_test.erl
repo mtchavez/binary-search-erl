@@ -20,3 +20,7 @@ found_smallest_test() ->
 found_in_middle_test() ->
     SearchResult = binarysearch:search(tree(), 5),
     ?assertEqual({{value, 5}, {position, 6}}, SearchResult).
+
+not_found_set_of_3() ->
+    SearchResult = binarysearch:search([1,2,3], 4),
+    ?assertEqual({notfound, 4}, SearchResult).

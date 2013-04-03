@@ -20,7 +20,7 @@ search(Set, Value, Low, High) ->
       MidVal = lists:nth(Mid, Set),
       if
         (MidVal > Value) ->
-          search(Set, Value, Low, Mid);
+          search(Set, Value, Low, Mid - 1);
         (MidVal < Value) ->
           search(Set, Value, Mid + 1, High);
         (true) ->
