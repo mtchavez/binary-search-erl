@@ -1,6 +1,8 @@
 binary-search-erl
 =================
 
+[![Build Status](https://travis-ci.org/mtchavez/binary-search-erl.png?branch=master)](https://travis-ci.org/mtchavez/binary-search-erl)
+
 Binary Search in Erlang
 
 ## Usage
